@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vaccinedistribution.ui.login.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="470.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="main_image" fitHeight="320.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/cartoon-coronavirus-vaccine-illustration_23-2148849133.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="306.0" prefWidth="690.0" style="-fx-background-color: #7CB4FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="login_label" layoutX="125.0" layoutY="55.0" prefHeight="51.0" prefWidth="106.0" text="Login" textFill="#fffdfd" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="134.0" layoutY="107.0" prefHeight="4.0" prefWidth="87.0" style="-fx-background-color: #FFFFFF;" />
+            <JFXTextField fx:id="username_text" focusColor="#2657ca" layoutX="100.0" layoutY="140.0" prefHeight="39.0" prefWidth="154.0" promptText="Username" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="password" layoutX="101.0" layoutY="198.0" prefHeight="34.0" prefWidth="154.0" promptText="Password" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+            <JFXButton fx:id="loginButton" layoutX="94.0" layoutY="261.0" onAction="#login" prefHeight="38.0" prefWidth="166.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="username" fitHeight="38.0" fitWidth="37.0" layoutX="54.0" layoutY="148.0">
+               <image>
+                  <Image url="@../../../images/user_30px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lock" fitHeight="32.0" fitWidth="32.0" layoutX="57.0" layoutY="207.0">
+               <image>
+                  <Image url="@../../../images/lock_30px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Status_Label" layoutX="77.0" layoutY="26.0" prefHeight="18.0" prefWidth="199.0" style="-fx-alignment: center;" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

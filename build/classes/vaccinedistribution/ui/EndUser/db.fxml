@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7CB4FF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vaccinedistribution.ui.EndUser.TableController">
+   <children>
+      <TableView fx:id="table" layoutX="19.0" layoutY="63.0" prefHeight="320.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="user_id" prefWidth="75.0" text="user_id" />
+          <TableColumn fx:id="first_name" prefWidth="75.0" text="first_name" />
+            <TableColumn fx:id="last_name" prefWidth="75.0" text="last_name" />
+            <TableColumn fx:id="email" prefWidth="75.0" text="email" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="search_button" layoutX="446.0" layoutY="13.0" onAction="#searchRow" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="search_text_field" focusColor="#2657ca" layoutX="19.0" layoutY="13.0" prefHeight="39.0" prefWidth="414.0" promptText="Search User ID" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+      <Label fx:id="null_label" layoutX="19.0" layoutY="383.0" />
+   </children>
+</AnchorPane>

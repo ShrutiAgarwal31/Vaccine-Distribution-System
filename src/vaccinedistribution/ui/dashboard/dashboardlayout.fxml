@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vaccinedistribution.ui.dashboard.DashboardlayoutController">
+   <right>
+      <AnchorPane prefHeight="438.0" prefWidth="442.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="453.0" fitWidth="441.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/4999291.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="443.0" prefWidth="323.0" style="-fx-background-color: #7CB4FF;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="logoutButton" cancelButton="true" layoutX="17.0" layoutY="402.0" onAction="#closeStage1" prefHeight="26.0" prefWidth="289.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutY="394.0" prefHeight="2.0" prefWidth="323.0" style="-fx-background-color: #FFFFFF;" />
+            <JFXButton fx:id="manufacturers" layoutX="94.0" layoutY="246.0" onAction="#manufact" prefHeight="33.0" prefWidth="135.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Manufacturers" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="providers" layoutX="94.0" layoutY="301.0" onAction="#provider" prefHeight="33.0" prefWidth="135.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Providers" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="citizens" layoutX="94.0" layoutY="189.0" onAction="#citizens" prefHeight="33.0" prefWidth="135.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Citizens" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutY="53.0" prefHeight="2.0" prefWidth="323.0" style="-fx-background-color: #FFFFFF;" />
+            <JFXButton fx:id="about" layoutX="14.0" layoutY="12.0" onAction="#aboutPage" prefHeight="33.0" prefWidth="135.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="About" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="precautions" layoutX="174.0" layoutY="12.0" onAction="#precautionsPage" prefHeight="33.0" prefWidth="135.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Precautions" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="registrations" layoutX="35.0" layoutY="87.0" prefHeight="51.0" prefWidth="279.0" text="Registerations" textFill="#fffdfd" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="118.0" layoutY="138.0" prefHeight="4.0" prefWidth="87.0" style="-fx-background-color: #FFFFFF;" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

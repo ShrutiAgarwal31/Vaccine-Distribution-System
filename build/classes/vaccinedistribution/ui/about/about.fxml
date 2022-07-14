@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="682.0" prefWidth="942.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="vaccinedistribution.ui.about.AboutController">
+   <children>
+      <AnchorPane fx:id="aviPane" layoutY="48.0" prefHeight="542.0" prefWidth="314.0" style="-fx-background-color: #7CB4FF; -fx-border-width: 5; -fx-border-color: #1F71BA;">
+         <children>
+            <AnchorPane layoutX="56.0" layoutY="51.0" prefHeight="264.0" prefWidth="202.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fx:id="aviImage" fitHeight="237.0" fitWidth="178.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/aviImage.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="aviPRN" layoutX="56.0" layoutY="393.0" prefHeight="30.0" prefWidth="202.0" style="-fx-alignment: center; -fx-background-color: #1F71BA; -fx-background-radius: 50;" text="19070122153" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="aviName" layoutX="56.0" layoutY="342.0" prefHeight="30.0" prefWidth="202.0" style="-fx-alignment: center; -fx-background-color: #1F71BA; -fx-background-radius: 50;" text="Avi Shah" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="aviLink" layoutX="56.0" layoutY="441.0" onAction="#loadAvi" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Connect" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="313.0" layoutY="48.0" prefHeight="542.0" prefWidth="314.0" style="-fx-background-color: #7CB4FF; -fx-border-color: #1F71BA; -fx-border-width: 5;">
+         <children>
+            <AnchorPane layoutX="56.0" layoutY="51.0" prefHeight="264.0" prefWidth="202.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fx:id="akshatImage" fitHeight="237.0" fitWidth="178.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/akshatPaneSS.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="akshatName" layoutX="56.0" layoutY="342.0" prefHeight="30.0" prefWidth="202.0" style="-fx-alignment: center; -fx-background-color: #1F71BA; -fx-background-radius: 50;" text="Akshat Shah" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="akshatPRN" layoutX="56.0" layoutY="393.0" prefHeight="30.0" prefWidth="202.0" style="-fx-alignment: center; -fx-background-color: #1F71BA; -fx-background-radius: 50;" text="19070122152" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="akshatLink" layoutX="56.0" layoutY="441.0" onAction="#loadAkshat" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Connect" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="627.0" layoutY="48.0" prefHeight="542.0" prefWidth="314.0" style="-fx-background-color: #7CB4FF; -fx-border-color: #1F71BA; -fx-border-width: 5;">
+         <children>
+            <Label fx:id="shrutiName" layoutX="56.0" layoutY="342.0" prefHeight="30.0" prefWidth="202.0" style="-fx-alignment: center; -fx-background-color: #1F71BA; -fx-background-radius: 50;" text="Shruti Agarwal" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="shrutiPRN" layoutX="56.0" layoutY="393.0" prefHeight="30.0" prefWidth="202.0" style="-fx-alignment: center; -fx-background-color: #1F71BA; -fx-background-radius: 50;" text="19070122164" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="56.0" layoutY="51.0" prefHeight="264.0" prefWidth="202.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fx:id="shrutiImage" fitHeight="237.0" fitWidth="178.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/shruti.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="shrutiLink" layoutX="56.0" layoutY="441.0" onAction="#loadShruti" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: #1F71BA; -fx-background-radius: 90;" text="Connect" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="teamLabel" prefHeight="49.0" prefWidth="942.0" style="-fx-alignment: center; -fx-background-color: #1F71BA;" text="TEAM VACCINE DISTRIBUTION SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="matter" layoutY="587.0" prefHeight="98.0" prefWidth="942.0" style="-fx-background-color: #1F71BA; -fx-alignment: center;" text="The Vaccine Distribution System aims to make the application process less tedious and easy to use. User friendly application process through website and appropriate display of registrations on the application makes the system of allocation of vaccines and orders much easier for the administration." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
